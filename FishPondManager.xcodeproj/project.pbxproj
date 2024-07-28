@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3DB55A72C56702A00AEA1ED /* FishPondManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB55A62C56702A00AEA1ED /* FishPondManagerApp.swift */; };
+		E3DB55A92C56702A00AEA1ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB55A82C56702A00AEA1ED /* ContentView.swift */; };
+		E3DB55AB2C56702A00AEA1ED /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB55AA2C56702A00AEA1ED /* Item.swift */; };
+		E3DB55AD2C56702B00AEA1ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3DB55AC2C56702B00AEA1ED /* Assets.xcassets */; };
+		E3DB55B02C56702B00AEA1ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3DB55AF2C56702B00AEA1ED /* Preview Assets.xcassets */; };
+		E3DB55BA2C56702B00AEA1ED /* FishPondManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB55B92C56702B00AEA1ED /* FishPondManagerTests.swift */; };
+		E3DB55C42C56702B00AEA1ED /* FishPondManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB55C32C56702B00AEA1ED /* FishPondManagerUITests.swift */; };
+		E3DB55C62C56702B00AEA1ED /* FishPondManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB55C52C56702B00AEA1ED /* FishPondManagerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3DB55B62C56702B00AEA1ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3DB559B2C56702A00AEA1ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3DB55A22C56702A00AEA1ED;
+			remoteInfo = FishPondManager;
+		};
+		E3DB55C02C56702B00AEA1ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3DB559B2C56702A00AEA1ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3DB55A22C56702A00AEA1ED;
+			remoteInfo = FishPondManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E3DB55A32C56702A00AEA1ED /* FishPondManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishPondManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DB55A62C56702A00AEA1ED /* FishPondManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishPondManagerApp.swift; sourceTree = "<group>"; };
+		E3DB55A82C56702A00AEA1ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E3DB55AA2C56702A00AEA1ED /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E3DB55AC2C56702B00AEA1ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3DB55AF2C56702B00AEA1ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E3DB55B52C56702B00AEA1ED /* FishPondManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishPondManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DB55B92C56702B00AEA1ED /* FishPondManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishPondManagerTests.swift; sourceTree = "<group>"; };
+		E3DB55BF2C56702B00AEA1ED /* FishPondManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishPondManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DB55C32C56702B00AEA1ED /* FishPondManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishPondManagerUITests.swift; sourceTree = "<group>"; };
+		E3DB55C52C56702B00AEA1ED /* FishPondManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishPondManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3DB55A02C56702A00AEA1ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DB55B22C56702B00AEA1ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DB55BC2C56702B00AEA1ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3DB559A2C56702A00AEA1ED = {
+			isa = PBXGroup;
+			children = (
+				E3DB55A52C56702A00AEA1ED /* FishPondManager */,
+				E3DB55B82C56702B00AEA1ED /* FishPondManagerTests */,
+				E3DB55C22C56702B00AEA1ED /* FishPondManagerUITests */,
+				E3DB55A42C56702A00AEA1ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3DB55A42C56702A00AEA1ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3DB55A32C56702A00AEA1ED /* FishPondManager.app */,
+				E3DB55B52C56702B00AEA1ED /* FishPondManagerTests.xctest */,
+				E3DB55BF2C56702B00AEA1ED /* FishPondManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3DB55A52C56702A00AEA1ED /* FishPondManager */ = {
+			isa = PBXGroup;
+			children = (
+				E3DB55A62C56702A00AEA1ED /* FishPondManagerApp.swift */,
+				E3DB55A82C56702A00AEA1ED /* ContentView.swift */,
+				E3DB55AA2C56702A00AEA1ED /* Item.swift */,
+				E3DB55AC2C56702B00AEA1ED /* Assets.xcassets */,
+				E3DB55AE2C56702B00AEA1ED /* Preview Content */,
+			);
+			path = FishPondManager;
+			sourceTree = "<group>";
+		};
+		E3DB55AE2C56702B00AEA1ED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E3DB55AF2C56702B00AEA1ED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E3DB55B82C56702B00AEA1ED /* FishPondManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3DB55B92C56702B00AEA1ED /* FishPondManagerTests.swift */,
+			);
+			path = FishPondManagerTests;
+			sourceTree = "<group>";
+		};
+		E3DB55C22C56702B00AEA1ED /* FishPondManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E3DB55C32C56702B00AEA1ED /* FishPondManagerUITests.swift */,
+				E3DB55C52C56702B00AEA1ED /* FishPondManagerUITestsLaunchTests.swift */,
+			);
+			path = FishPondManagerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3DB55A22C56702A00AEA1ED /* FishPondManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3DB55C92C56702B00AEA1ED /* Build configuration list for PBXNativeTarget "FishPondManager" */;
+			buildPhases = (
+				E3DB559F2C56702A00AEA1ED /* Sources */,
+				E3DB55A02C56702A00AEA1ED /* Frameworks */,
+				E3DB55A12C56702A00AEA1ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FishPondManager;
+			productName = FishPondManager;
+			productReference = E3DB55A32C56702A00AEA1ED /* FishPondManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3DB55B42C56702B00AEA1ED /* FishPondManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3DB55CC2C56702B00AEA1ED /* Build configuration list for PBXNativeTarget "FishPondManagerTests" */;
+			buildPhases = (
+				E3DB55B12C56702B00AEA1ED /* Sources */,
+				E3DB55B22C56702B00AEA1ED /* Frameworks */,
+				E3DB55B32C56702B00AEA1ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3DB55B72C56702B00AEA1ED /* PBXTargetDependency */,
+			);
+			name = FishPondManagerTests;
+			productName = FishPondManagerTests;
+			productReference = E3DB55B52C56702B00AEA1ED /* FishPondManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3DB55BE2C56702B00AEA1ED /* FishPondManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3DB55CF2C56702B00AEA1ED /* Build configuration list for PBXNativeTarget "FishPondManagerUITests" */;
+			buildPhases = (
+				E3DB55BB2C56702B00AEA1ED /* Sources */,
+				E3DB55BC2C56702B00AEA1ED /* Frameworks */,
+				E3DB55BD2C56702B00AEA1ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3DB55C12C56702B00AEA1ED /* PBXTargetDependency */,
+			);
+			name = FishPondManagerUITests;
+			productName = FishPondManagerUITests;
+			productReference = E3DB55BF2C56702B00AEA1ED /* FishPondManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3DB559B2C56702A00AEA1ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E3DB55A22C56702A00AEA1ED = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E3DB55B42C56702B00AEA1ED = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E3DB55A22C56702A00AEA1ED;
+					};
+					E3DB55BE2C56702B00AEA1ED = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E3DB55A22C56702A00AEA1ED;
+					};
+				};
+			};
+			buildConfigurationList = E3DB559E2C56702A00AEA1ED /* Build configuration list for PBXProject "FishPondManager" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3DB559A2C56702A00AEA1ED;
+			productRefGroup = E3DB55A42C56702A00AEA1ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3DB55A22C56702A00AEA1ED /* FishPondManager */,
+				E3DB55B42C56702B00AEA1ED /* FishPondManagerTests */,
+				E3DB55BE2C56702B00AEA1ED /* FishPondManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3DB55A12C56702A00AEA1ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DB55B02C56702B00AEA1ED /* Preview Assets.xcassets in Resources */,
+				E3DB55AD2C56702B00AEA1ED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DB55B32C56702B00AEA1ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DB55BD2C56702B00AEA1ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3DB559F2C56702A00AEA1ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DB55A92C56702A00AEA1ED /* ContentView.swift in Sources */,
+				E3DB55AB2C56702A00AEA1ED /* Item.swift in Sources */,
+				E3DB55A72C56702A00AEA1ED /* FishPondManagerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DB55B12C56702B00AEA1ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DB55BA2C56702B00AEA1ED /* FishPondManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DB55BB2C56702B00AEA1ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DB55C42C56702B00AEA1ED /* FishPondManagerUITests.swift in Sources */,
+				E3DB55C62C56702B00AEA1ED /* FishPondManagerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3DB55B72C56702B00AEA1ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3DB55A22C56702A00AEA1ED /* FishPondManager */;
+			targetProxy = E3DB55B62C56702B00AEA1ED /* PBXContainerItemProxy */;
+		};
+		E3DB55C12C56702B00AEA1ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3DB55A22C56702A00AEA1ED /* FishPondManager */;
+			targetProxy = E3DB55C02C56702B00AEA1ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E3DB55C72C56702B00AEA1ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3DB55C82C56702B00AEA1ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3DB55CA2C56702B00AEA1ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FishPondManager/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nicko.FishPondManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3DB55CB2C56702B00AEA1ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FishPondManager/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nicko.FishPondManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3DB55CD2C56702B00AEA1ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nicko.FishPondManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishPondManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FishPondManager";
+			};
+			name = Debug;
+		};
+		E3DB55CE2C56702B00AEA1ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nicko.FishPondManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishPondManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FishPondManager";
+			};
+			name = Release;
+		};
+		E3DB55D02C56702B00AEA1ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nicko.FishPondManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FishPondManager;
+			};
+			name = Debug;
+		};
+		E3DB55D12C56702B00AEA1ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nicko.FishPondManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FishPondManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3DB559E2C56702A00AEA1ED /* Build configuration list for PBXProject "FishPondManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DB55C72C56702B00AEA1ED /* Debug */,
+				E3DB55C82C56702B00AEA1ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3DB55C92C56702B00AEA1ED /* Build configuration list for PBXNativeTarget "FishPondManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DB55CA2C56702B00AEA1ED /* Debug */,
+				E3DB55CB2C56702B00AEA1ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3DB55CC2C56702B00AEA1ED /* Build configuration list for PBXNativeTarget "FishPondManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DB55CD2C56702B00AEA1ED /* Debug */,
+				E3DB55CE2C56702B00AEA1ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3DB55CF2C56702B00AEA1ED /* Build configuration list for PBXNativeTarget "FishPondManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DB55D02C56702B00AEA1ED /* Debug */,
+				E3DB55D12C56702B00AEA1ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3DB559B2C56702A00AEA1ED /* Project object */;
+}
