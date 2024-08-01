@@ -1,61 +1,120 @@
-//
-//  ContentView.swift
-//  FishPondManager
-//
-//  Created by Nicko B on 28/07/2024.
-//
-
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        NavigationView {
+            VStack {
+                //Spacer()
+                Text("Bienvenue sur l'application de gestion de votre bassin de poissons")
+                    .font(.largeTitle.italic())
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .shadow(radius: 20)
+                    .foregroundColor(.blue)
+                
+                Spacer()
+                
+                GeometryReader { geometry in
+                                  Image("Bassin")
+                                      .resizable()
+                                      .scaledToFit()
+                                      .frame(width: geometry.size.width * 1, height: geometry.size.height * 0.8) // Ajustez la taille en fonction des dimensions de l'écran
+                                      .shadow(radius: 30)
+                                      //.cornerRadius(30)
+                              }
+                .frame(height: UIScreen.main.bounds.height * 0.3) // Ajustez la hauteur de l'image en fonction de la hauteur de l'écran
+                
+                Spacer()
+                
+                Spacer()
+                
+                HStack {
+                    NavigationLink(destination: CalculView()) {
+                        VStack {
+                            Image(systemName: "function")
+                                .font(.largeTitle)
+                            Text("Calcul")
+                                .font(.footnote)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                    }
+                    
+                    NavigationLink(destination: TraitementView()) {
+                        VStack {
+                            Image(systemName: "pills")
+                                .font(.largeTitle)
+                            Text("Entretien")
+                                .font(.footnote)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                    }
+                    
+                    NavigationLink(destination: WaterParamView()) {
+                        VStack {
+                            Image(systemName: "drop.fill")
+                                .font(.largeTitle)
+                            Text("Paramètres")
+                                .font(.footnote)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                    }
+                    
+                    NavigationLink(destination: PopulationView()) {
+                        VStack {
+                            Image(systemName: "camera.fill")
+                                .font(.largeTitle)
+                            Text("Photo")
+                                .font(.footnote)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
                     }
                 }
-                .onDelete(perform: deleteItems)
+                .padding(.bottom, 10)
+                .background(Color(UIColor.systemGray6))
+                .cornerRadius(20)
+                .shadow(radius: 10)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
+//            .navigationBarTitle("Accueil", displayMode: .inline)
+//            .padding(.horizontal, 16)
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
+        .navigationViewStyle(StackNavigationViewStyle()) // Utilisez cette ligne pour corriger les problèmes d'affichage sur iPad
     }
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+//struct CalculView: View {
+//    var body: some View {
+//        Text("Calcul View")
+//            .navigationBarTitle("Calcul", displayMode: .inline)
+//    }
+//}
+//
+//struct TraitementView: View {
+//    var body: some View {
+//        Text("Traitement View")
+//            .navigationBarTitle("Entretien", displayMode: .inline)
+//    }
+//}
+//
+//struct WaterParamView: View {
+//    var body: some View {
+//        Text("Water Param View")
+//            .navigationBarTitle("Paramètres", displayMode: .inline)
+//    }
+//}
+//
+//struct PopulationView: View {
+//    var body: some View {
+//        Text("Population View")
+//            .navigationBarTitle("Photo", displayMode: .inline)
+//    }
+//}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

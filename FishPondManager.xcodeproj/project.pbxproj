@@ -15,6 +15,14 @@
 		E3DB55BA2C56702B00AEA1ED /* FishPondManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB55B92C56702B00AEA1ED /* FishPondManagerTests.swift */; };
 		E3DB55C42C56702B00AEA1ED /* FishPondManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB55C32C56702B00AEA1ED /* FishPondManagerUITests.swift */; };
 		E3DB55C62C56702B00AEA1ED /* FishPondManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB55C52C56702B00AEA1ED /* FishPondManagerUITestsLaunchTests.swift */; };
+		E3DB55D52C56726700AEA1ED /* CalculView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB55D42C56726700AEA1ED /* CalculView.swift */; };
+		E3F226E62C56760C00AB7D7F /* TraitementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F226E52C56760C00AB7D7F /* TraitementView.swift */; };
+		E3F226E82C56762F00AB7D7F /* PopulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F226E72C56762F00AB7D7F /* PopulationView.swift */; };
+		E3F226EA2C579A3B00AB7D7F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F226E92C579A3B00AB7D7F /* ImagePicker.swift */; };
+		E3F226EE2C579C2800AB7D7F /* FishPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F226ED2C579C2800AB7D7F /* FishPhoto.swift */; };
+		E3F226F02C579C5000AB7D7F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F226EF2C579C5000AB7D7F /* Extensions.swift */; };
+		E3F226F22C57AB9D00AB7D7F /* WaterParamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F226F12C57AB9D00AB7D7F /* WaterParamView.swift */; };
+		E3F226F42C57AF3100AB7D7F /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F226F32C57AF3100AB7D7F /* Formatters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,14 @@
 		E3DB55BF2C56702B00AEA1ED /* FishPondManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishPondManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DB55C32C56702B00AEA1ED /* FishPondManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishPondManagerUITests.swift; sourceTree = "<group>"; };
 		E3DB55C52C56702B00AEA1ED /* FishPondManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishPondManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E3DB55D42C56726700AEA1ED /* CalculView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculView.swift; sourceTree = "<group>"; };
+		E3F226E52C56760C00AB7D7F /* TraitementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitementView.swift; sourceTree = "<group>"; };
+		E3F226E72C56762F00AB7D7F /* PopulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationView.swift; sourceTree = "<group>"; };
+		E3F226E92C579A3B00AB7D7F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		E3F226ED2C579C2800AB7D7F /* FishPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishPhoto.swift; sourceTree = "<group>"; };
+		E3F226EF2C579C5000AB7D7F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E3F226F12C57AB9D00AB7D7F /* WaterParamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterParamView.swift; sourceTree = "<group>"; };
+		E3F226F32C57AF3100AB7D7F /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +114,12 @@
 			children = (
 				E3DB55A62C56702A00AEA1ED /* FishPondManagerApp.swift */,
 				E3DB55A82C56702A00AEA1ED /* ContentView.swift */,
+				E3DB55D42C56726700AEA1ED /* CalculView.swift */,
+				E3F226EB2C579BE600AB7D7F /* Helpers */,
+				E3F226E72C56762F00AB7D7F /* PopulationView.swift */,
+				E3F226EC2C579BFB00AB7D7F /* Models */,
+				E3F226E52C56760C00AB7D7F /* TraitementView.swift */,
+				E3F226F12C57AB9D00AB7D7F /* WaterParamView.swift */,
 				E3DB55AA2C56702A00AEA1ED /* Item.swift */,
 				E3DB55AC2C56702B00AEA1ED /* Assets.xcassets */,
 				E3DB55AE2C56702B00AEA1ED /* Preview Content */,
@@ -128,6 +150,24 @@
 				E3DB55C52C56702B00AEA1ED /* FishPondManagerUITestsLaunchTests.swift */,
 			);
 			path = FishPondManagerUITests;
+			sourceTree = "<group>";
+		};
+		E3F226EB2C579BE600AB7D7F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E3F226E92C579A3B00AB7D7F /* ImagePicker.swift */,
+				E3F226EF2C579C5000AB7D7F /* Extensions.swift */,
+				E3F226F32C57AF3100AB7D7F /* Formatters.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E3F226EC2C579BFB00AB7D7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3F226ED2C579C2800AB7D7F /* FishPhoto.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +300,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F226EA2C579A3B00AB7D7F /* ImagePicker.swift in Sources */,
+				E3F226F02C579C5000AB7D7F /* Extensions.swift in Sources */,
+				E3F226F42C57AF3100AB7D7F /* Formatters.swift in Sources */,
+				E3F226F22C57AB9D00AB7D7F /* WaterParamView.swift in Sources */,
 				E3DB55A92C56702A00AEA1ED /* ContentView.swift in Sources */,
 				E3DB55AB2C56702A00AEA1ED /* Item.swift in Sources */,
+				E3DB55D52C56726700AEA1ED /* CalculView.swift in Sources */,
+				E3F226E82C56762F00AB7D7F /* PopulationView.swift in Sources */,
+				E3F226E62C56760C00AB7D7F /* TraitementView.swift in Sources */,
+				E3F226EE2C579C2800AB7D7F /* FishPhoto.swift in Sources */,
 				E3DB55A72C56702A00AEA1ED /* FishPondManagerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

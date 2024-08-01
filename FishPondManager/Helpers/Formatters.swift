@@ -1,8 +1,10 @@
-//
-//  Formatters.swift
-//  FishPondManager
-//
-//  Created by Nicko B on 29/07/2024.
-//
-
 import Foundation
+
+struct Formatters {
+    static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .none
+        return formatter
+    }()
+}
