@@ -1,11 +1,12 @@
 import SwiftUI
+import AVKit
 
 struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                //Spacer()
-                Text("Bienvenue sur l'application de gestion de votre bassin de poissons")
+            
+                Text("Fish Pond Manager")
                     .font(.largeTitle.italic())
                     .multilineTextAlignment(.center)
                     .padding()
@@ -15,17 +16,19 @@ struct ContentView: View {
                 Spacer()
                 
                 GeometryReader { geometry in
-                                  Image("Bassin")
-                                      .resizable()
-                                      .scaledToFit()
-                                      .frame(width: geometry.size.width * 1, height: geometry.size.height * 0.8) // Ajustez la taille en fonction des dimensions de l'écran
-                                      .shadow(radius: 30)
-                                      //.cornerRadius(30)
-                              }
-                .frame(height: UIScreen.main.bounds.height * 0.3) // Ajustez la hauteur de l'image en fonction de la hauteur de l'écran
+                                                 Image("koi")
+                                                     .resizable()
+                                                     .scaledToFit()
+                                                     .frame(width: geometry.size.width * 1, height: geometry.size.height * 1) // Ajustez la taille en fonction des dimensions de l'écran
+                                                     .shadow(radius: 30)
+                                                     //.cornerRadius(30)
+                                             }
+                               .frame(height: UIScreen.main.bounds.height * 0.5) // Ajustez la hauteur de l'image en fonction de la hauteur de l'écran
+                               
                 
-                Spacer()
-                
+//                VideoPlayerView()
+//                    .frame(height: UIScreen.main.bounds.height * 0.2)  // Ajustez la hauteur de la vidéo ici
+//                
                 Spacer()
                 
                 HStack {
@@ -78,13 +81,48 @@ struct ContentView: View {
                 .cornerRadius(20)
                 .shadow(radius: 10)
             }
-//            .navigationBarTitle("Accueil", displayMode: .inline)
-//            .padding(.horizontal, 16)
         }
-        .navigationViewStyle(StackNavigationViewStyle()) // Utilisez cette ligne pour corriger les problèmes d'affichage sur iPad
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
+struct VideoPlayerView: View {
+    @StateObject private var videoPlayer = VideoPlayerCoordinator()
+
+    var body: some View {
+        VideoPlayer(player: videoPlayer.player)
+            .onAppear {
+                videoPlayer.start()
+            }
+            .aspectRatio(contentMode: .fill)
+            .clipped()
+    }
+}
+
+class VideoPlayerCoordinator: ObservableObject {
+    let player: AVPlayer
+
+    init() {
+        guard let url = Bundle.main.url(forResource: "animationFish", withExtension: "mp4") else {
+            fatalError("Erreur : Le fichier vidéo n'a pas été trouvé.")
+        }
+        self.player = AVPlayer(url: url)
+        NotificationCenter.default.addObserver(
+            forName: .AVPlayerItemDidPlayToEndTime,
+            object: player.currentItem,
+            queue: .main
+        ) { _ in
+            self.player.seek(to: .zero)
+            self.player.play()
+        }
+    }
+
+    func start() {
+        player.play()
+    }
+}
+
+// Exemples de vues pour navigation
 //struct CalculView: View {
 //    var body: some View {
 //        Text("Calcul View")
